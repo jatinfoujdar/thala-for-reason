@@ -69,6 +69,8 @@ function Thala() {
 
   return (
     <main className="flex flex-col items-center justify-center h-screen bg-gray-900 text-white">
+     <iframe src="https://giphy.com/embed/SsDiGCnZRtCCazWec0" width="100" height="100" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/thala-ms-dhoni-for-a-reason-SsDiGCnZRtCCazWec0">via GIPHY</a></p>
+        
       <h1 className="text-3xl mb-4">Thala for a reason</h1>
       {showGif && <h2 className="text-lg">{transformedInput}</h2>}
       {showAltGif && <h2 className="text-lg">{transformedInput}</h2>}
@@ -76,7 +78,7 @@ function Thala() {
         type="text"
         value={input}
         onChange={handleInputChange}
-        placeholder="Check if it is Thala or not"
+        placeholder="CHECK IF IT IS THALA OR NOT"
         className="border border-gray-400 rounded-md py-2 px-4 mb-4 text-black" 
       />
 
@@ -109,13 +111,17 @@ function Thala() {
       </div>
       {showGif && <img src={Donhi} alt="Thala gif" className="mb-4" />}
       <div className="absolute bottom-0 right-0 p-4 text-white">
-        <a href="https://twitter.com/JatinFoujdar" target="_blank" rel="noopener noreferrer" className="mr-4">
-          Twitter
-        </a>
-        <a href="https://github.com/jatinfoujdar" target="_blank" rel="noopener noreferrer">
-          Github
-        </a>
-      </div>
+  <a href="https://twitter.com/JatinFoujdar" target="_blank" rel="noopener noreferrer" className="mr-4">
+    Twitter
+  </a>
+  <a href="https://github.com/jatinfoujdar" target="_blank" rel="noopener noreferrer" className="mr-4">
+    Github
+  </a>
+  <a href="https://www.linkedin.com/in/jatinfoujdar10/" target="_blank" rel="noopener noreferrer">
+    Linkedin
+  </a>
+</div>
+
     </main>
   );
 }
